@@ -12,4 +12,4 @@ sudo apt-get update -y
 sudo apt-get install docker-ce -y # Specify specific version for production environment
 
 # Run the official Jenkins docker container
-sudo docker run -p 80:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+sudo docker run -d -p 80:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
